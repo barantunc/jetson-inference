@@ -372,9 +372,9 @@ tensorNet::tensorNet()
 	memset(mProfilerTimes, 0, sizeof(mProfilerTimes));
 
 #if NV_TENSORRT_MAJOR > 5
-	mWorkspaceSize = 32 << 20;
+	mWorkspaceSize = 128 << 20;
 #else
-	mWorkspaceSize = 16 << 20;
+	mWorkspaceSize = 64 << 20;
 #endif
 }
 
